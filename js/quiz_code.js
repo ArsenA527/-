@@ -41,7 +41,7 @@ window.onload = () => {
         let key = Object.keys(result).reduce((a, b) => result[a] > result[b] ? a : b),
             div = document.createElement('div'),
             img = document.createElement('img');
-        img.src = '../img/' + answers[key]['image'];
+        img.src = './img/' + answers[key]['image'];
         div.classList.add('result');
         img.classList.add('result-img');
         div.innerHTML = answers[key]['description'];
